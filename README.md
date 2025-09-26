@@ -109,6 +109,7 @@ GET https://devdict-api.vercel.app/terms/random
 - **프레임워크**: FastAPI
 - **서버 실행**: Uvicorn
 - **데이터 저장**: JSON (`terms.json`)
+- **배포**: Vercel
 
 ## 기여
 
