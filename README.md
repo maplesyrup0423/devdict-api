@@ -48,7 +48,7 @@ GET https://devdict-api.vercel.app/terms?keyword=<키워드>
 ### 3. 카테고리 필터
 
 ```http
- GET https://devdict-api.vercel.app/terms?category=<카테고리>
+GET https://devdict-api.vercel.app/terms?category=<카테고리>
 ```
 
 - backend, frontend, devops, database 등 카테고리별 조회 가능
