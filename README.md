@@ -57,10 +57,6 @@
 
 ---
 
-## 🌐 배포 URL
-
-[https://devdict-api.vercel.app](https://devdict-api.vercel.app)
-
 ## 🧪 API 테스트
 
 - 전체 용어: `https://devdict-api.vercel.app/terms`
