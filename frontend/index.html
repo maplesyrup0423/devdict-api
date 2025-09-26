@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT 용어 검색 (Developer Dictionary)</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f6f8;
+        margin: 0;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+
+      #search-container {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      input[type="text"] {
+        width: 300px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+      }
+
+      button {
+        padding: 10px 15px;
+        border-radius: 5px;
+        border: none;
+        background-color: #007bff;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        margin-left: 5px;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      #results {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 15px;
+      }
+
+      .card {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+      }
+
+      .card h2 {
+        margin: 0 0 10px 0;
+        font-size: 18px;
+        color: #007bff;
+      }
+
+      .card p {
+        margin: 0;
+        font-size: 14px;
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>IT 용어 검색</h1>
+
+    <div id="search-container">
+      <input type="text" id="search" placeholder="검색어 입력 (한글/영문)" />
+      <button onclick="searchTerm()">검색</button>
+    </div>
+
+    <div id="results"></div>
+
+    <script>
+      const API_BASE = "https://devdict-api.vercel.app";
+
+      async function searchTerm() {
+        const keyword = document.getElementById("search").value;
+        const res = await fetch(
+          `${API_BASE}/terms?keyword=${encodeURIComponent(keyword)}`
+        );
+        const data = await res.json();
+        const list = document.getElementById("results");
+        list.innerHTML = "";
+
+        if (!data || data.length === 0) {
+          list.innerHTML = "<p>검색 결과가 없습니다.</p>";
+          return;
+        }
+
+        data.forEach((term) => {
+          const card = document.createElement("div");
+          card.className = "card";
+          card.innerHTML = `<h2>${term.term} (${term.category})</h2>
+                          <p>${term.description}</p>`;
+          list.appendChild(card);
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -108,3 +108,7 @@ GET https://devdict-api.vercel.app/terms/random
 - **프레임워크**: FastAPI
 - **서버 실행**: Uvicorn
 - **데이터 저장**: JSON (`terms.json`)
+
+## 기여
+
+포크 후 `terms.json`에 추가하고 싶은 IT 용어를 JSON 형식으로 작성하여 추가한 뒤 PR(Pull Request)을 보내주세요.
