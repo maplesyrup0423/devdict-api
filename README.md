@@ -78,7 +78,6 @@ GET https://devdict-api.vercel.app/terms/random
     "category": "frontend",
     "description": "DOM(Document Object Model)은 HTML, XML 문서를 객체로 표현한 계층 구조를 말한다. JavaScript를 통해 문서 구조, 스타일, 내용 등을 동적으로 제어할 수 있다."
   }
-  // 이하 동일 형식
 ]
 ```
 
