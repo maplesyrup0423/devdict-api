@@ -26,6 +26,42 @@
 
 ---
 
+## GET 요청 사용
+
+### 1. 전체 용어 조회
+
+```http
+GET https://devdict-api.vercel.app/terms
+```
+
+- 모든 IT 용어를 확인할 수 있습니다.
+
+### 2. 키워드 검색
+
+```http
+GET https://devdict-api.vercel.app/terms?keyword=<키워드>
+```
+
+- 한글/영문 키워드로 검색 가능
+- 예시: https://devdict-api.vercel.app/terms?keyword=DOM
+
+### 3. 카테고리 필터
+
+```http
+ GET https://devdict-api.vercel.app/terms?category=<카테고리>
+```
+
+- backend, frontend, devops, database 등 카테고리별 조회 가능
+- 예시: https://devdict-api.vercel.app/terms?category=frontend
+
+### 4. 랜덤 용어 조회
+
+```http
+GET https://devdict-api.vercel.app/terms/random
+```
+
+- 랜덤으로 IT 용어 1개를 반환합니다
+
 ## 📦 데이터 구조 (`terms.json` 예시)
 
 ```json
@@ -46,7 +82,7 @@
 ]
 ```
 
-# IT 용어 사전 API - 설치 및 사용 가이드
+---
 
 ## 📌 데이터 구조
 
@@ -64,6 +100,8 @@
 - 키워드 검색: `https://devdict-api.vercel.app/terms?keyword=dom`
 - 카테고리별 조회: `https://devdict-api.vercel.app/terms?category=frontend`
 - 상세 조회: `https://devdict-api.vercel.app/terms/1`
+
+---
 
 ## 🛠 기술 스택
 
