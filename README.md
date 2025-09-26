@@ -57,39 +57,17 @@
 
 ---
 
-## ⚡ 설치 및 실행
+## 🌐 배포 URL
 
-### 1. 가상환경 설정 (선택)
-
-```bash
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-
-```
-
-## 2. 라이브러리 설치
-
-```bash
-pip install -r requirements.txt
-
-```
-
-## 3. 서버 실행
-
-```bash
-uvicorn main:app --reload
-
-```
+[https://devdict-api.vercel.app](https://devdict-api.vercel.app)
 
 ## 🧪 API 테스트
 
-- **전체 용어**: [`http://127.0.0.1:8000/terms`](http://127.0.0.1:8000/terms)
-- **랜덤 용어**: [`http://127.0.0.1:8000/terms/random`](http://127.0.0.1:8000/terms/random)
-- **키워드 검색**: [`http://127.0.0.1:8000/terms?keyword=dom`](http://127.0.0.1:8000/terms?keyword=dom)
-- **카테고리별 조회**: [`http://127.0.0.1:8000/terms?category=frontend`](http://127.0.0.1:8000/terms?category=frontend)
-- **상세 조회**: [`http://127.0.0.1:8000/terms/4`](http://127.0.0.1:8000/terms/4)
-
----
+- 전체 용어: `https://devdict-api.vercel.app/terms`
+- 랜덤 용어: `https://devdict-api.vercel.app/terms/random`
+- 키워드 검색: `https://devdict-api.vercel.app/terms?keyword=dom`
+- 카테고리별 조회: `https://devdict-api.vercel.app/terms?category=frontend`
+- 상세 조회: `https://devdict-api.vercel.app/terms/1`
 
 ## 🛠 기술 스택
 
