@@ -3,12 +3,17 @@ from fastapi.responses import FileResponse
 import json
 import random
 import os
+from fastapi.staticfiles import StaticFiles
 
 app = FastAPI(
     title="IT 용어 사전 API",
-    description="개발자 취준용 IT 용어 REST API",
+    description=" IT 용어 REST API",
     version="1.0.0"
 )
+
+
+# frontend 폴더를 루트 경로에 마운트
+app.mount("/", StaticFiles(directory="frontend", html=True), name="frontend")
 
 # 데이터 로드
 with open("terms.json", "r", encoding="utf-8") as f:
