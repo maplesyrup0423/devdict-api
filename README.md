@@ -61,6 +61,7 @@ GET https://devdict-api.vercel.app/terms/random
 ```
 
 - 랜덤으로 IT 용어 1개를 반환합니다
+- https://it-interview-prep.web.app/ 에서 사용 예시 확인 가능
 
 ## 📦 데이터 구조 (`terms.json` 예시)
 
