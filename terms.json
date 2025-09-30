@@ -118,5 +118,125 @@
     "term": "GraphQL",
     "category": "backend",
     "description": "GraphQL은 클라이언트가 원하는 데이터만 정확히 요청하고 받을 수 있는 쿼리 언어이자 런타임이다. REST보다 유연한 데이터 요청이 가능하다."
+  },
+  {
+    "id": 21,
+    "term": "TypeScript",
+    "category": "frontend",
+    "description": "TypeScript는 JavaScript에 정적 타입을 추가한 언어이다. 타입 검사를 통해 오류를 사전에 방지하고, 코드 가독성과 유지보수성을 높일 수 있다."
+  },
+  {
+    "id": 22,
+    "term": "React",
+    "category": "frontend",
+    "description": "React는 UI를 구성하기 위한 자바스크립트 라이브러리로, 컴포넌트 기반 개발을 통해 재사용성과 유지보수성을 높인다."
+  },
+  {
+    "id": 23,
+    "term": "SPA",
+    "category": "frontend",
+    "description": "SPA(Single Page Application)는 하나의 HTML 페이지에서 동적으로 콘텐츠를 바꿔가며 동작하는 웹 애플리케이션이다. 페이지 전환 속도가 빠르고 사용자 경험이 좋다."
+  },
+  {
+    "id": 24,
+    "term": "SSR",
+    "category": "frontend",
+    "description": "SSR(Server Side Rendering)은 서버에서 HTML을 렌더링해 클라이언트에 전달하는 방식이다. 초기 로딩 속도가 빠르고 SEO에 유리하다."
+  },
+  {
+    "id": 25,
+    "term": "Graph Database",
+    "category": "database",
+    "description": "그래프 데이터베이스는 노드와 엣지 구조로 데이터를 저장하여 관계를 효율적으로 표현하는 데이터베이스다. 소셜 네트워크나 추천 시스템에 자주 사용된다."
+  },
+  {
+    "id": 26,
+    "term": "Index",
+    "category": "database",
+    "description": "인덱스는 데이터베이스에서 검색 속도를 높이기 위해 사용하는 자료구조다. 특정 컬럼에 인덱스를 설정하면 조회 성능이 향상된다."
+  },
+  {
+    "id": 27,
+    "term": "ORM",
+    "category": "backend",
+    "description": "ORM(Object Relational Mapping)은 객체 지향 언어의 객체와 관계형 데이터베이스의 테이블을 매핑해주는 기술이다. SQL 작성 없이 데이터 조작이 가능하다."
+  },
+  {
+    "id": 28,
+    "term": "WebSocket",
+    "category": "network",
+    "description": "WebSocket은 서버와 클라이언트 간의 양방향 통신을 위한 프로토콜이다. 실시간 채팅, 알림 등 빠른 데이터 교환이 필요한 서비스에서 사용된다."
+  },
+  {
+    "id": 29,
+    "term": "Proxy Server",
+    "category": "network",
+    "description": "프록시 서버는 클라이언트와 서버 사이에서 중개 역할을 하는 서버다. 캐싱, 로드 밸런싱, 보안 강화 등의 목적으로 사용된다."
+  },
+  {
+    "id": 30,
+    "term": "SSL/TLS",
+    "category": "security",
+    "description": "SSL/TLS는 인터넷 통신을 암호화하여 데이터 도청이나 변조를 방지하는 보안 프로토콜이다. HTTPS는 TLS 위에서 동작한다."
+  },
+  {
+    "id": 31,
+    "term": "Hashing",
+    "category": "security",
+    "description": "해싱은 입력값을 고정된 길이의 해시값으로 변환하는 기술이다. 비밀번호 저장이나 데이터 무결성 검사 등에 사용된다."
+  },
+  {
+    "id": 32,
+    "term": "Kubernetes",
+    "category": "devops",
+    "description": "Kubernetes는 컨테이너화된 애플리케이션을 자동으로 배포, 확장, 관리하는 오케스트레이션 도구이다. 대규모 서비스 운영에 필수적이다."
+  },
+  {
+    "id": 33,
+    "term": "Infrastructure as Code",
+    "category": "devops",
+    "description": "IaC(Infrastructure as Code)는 인프라를 코드로 관리하는 방식이다. 서버 설정, 네트워크 구성을 자동화하고 재현성을 높인다."
+  },
+  {
+    "id": 34,
+    "term": "Webhook",
+    "category": "backend",
+    "description": "Webhook은 특정 이벤트가 발생했을 때 지정된 URL로 데이터를 자동 전송하는 방식이다. 실시간 알림이나 외부 서비스 연동에 활용된다."
+  },
+  {
+    "id": 35,
+    "term": "CSR",
+    "category": "frontend",
+    "description": "CSR(Client Side Rendering)은 브라우저에서 자바스크립트를 사용해 콘텐츠를 렌더링하는 방식이다. 사용자 인터랙션이 많은 웹 앱에서 자주 사용된다."
+  },
+  {
+    "id": 36,
+    "term": "Event Loop",
+    "category": "backend",
+    "description": "이벤트 루프는 자바스크립트의 비동기 처리 메커니즘으로, 호출 스택과 태스크 큐를 관리하여 논블로킹 동작을 가능하게 한다."
+  },
+  {
+    "id": 37,
+    "term": "Pipeline",
+    "category": "devops",
+    "description": "파이프라인은 코드 빌드, 테스트, 배포 과정을 자동화한 워크플로우다. CI/CD 구현의 핵심 구성 요소다."
+  },
+  {
+    "id": 38,
+    "term": "Message Queue",
+    "category": "architecture",
+    "description": "메시지 큐는 비동기 통신을 위해 메시지를 임시 저장하고 전달하는 시스템이다. 마이크로서비스 간 데이터 전송에 자주 사용된다."
+  },
+  {
+    "id": 39,
+    "term": "Serverless",
+    "category": "architecture",
+    "description": "서버리스는 서버를 직접 관리하지 않고 클라우드에서 자동으로 실행되는 함수 단위의 컴퓨팅 모델이다. 사용한 만큼만 비용을 지불한다."
+  },
+  {
+    "id": 40,
+    "term": "CDN",
+    "category": "network",
+    "description": "CDN(Content Delivery Network)은 전 세계에 분산된 서버를 통해 콘텐츠를 빠르게 전달하는 네트워크다. 웹사이트 속도와 안정성을 개선한다."
   }
 ]
