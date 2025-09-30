@@ -238,5 +238,125 @@
     "term": "CDN",
     "category": "network",
     "description": "CDN(Content Delivery Network)은 전 세계에 분산된 서버를 통해 콘텐츠를 빠르게 전달하는 네트워크다. 웹사이트 속도와 안정성을 개선한다."
+  },
+  {
+    "id": 41,
+    "term": "gRPC",
+    "category": "backend",
+    "description": "gRPC는 구글에서 개발한 고성능 원격 프로시저 호출(RPC) 프레임워크다. HTTP/2를 기반으로 하며, 프로토콜 버퍼를 사용해 빠르고 효율적인 통신이 가능하다."
+  },
+  {
+    "id": 42,
+    "term": "CQRS",
+    "category": "architecture",
+    "description": "CQRS(Command Query Responsibility Segregation)는 읽기 작업과 쓰기 작업을 분리하는 아키텍처 패턴이다. 복잡한 비즈니스 로직에서 성능과 확장성을 높일 수 있다."
+  },
+  {
+    "id": 43,
+    "term": "Event Sourcing",
+    "category": "architecture",
+    "description": "Event Sourcing은 상태를 직접 저장하지 않고 발생한 이벤트 자체를 저장하여 시스템 상태를 재구성하는 패턴이다. 변경 이력을 추적하거나 롤백이 필요한 시스템에 유용하다."
+  },
+  {
+    "id": 44,
+    "term": "Reverse Proxy",
+    "category": "network",
+    "description": "리버스 프록시는 클라이언트 대신 서버에 요청을 전달하고 응답을 반환하는 서버다. 로드 밸런싱, 보안, 캐싱에 활용된다."
+  },
+  {
+    "id": 45,
+    "term": "API Gateway",
+    "category": "backend",
+    "description": "API Gateway는 클라이언트와 여러 마이크로서비스 간의 중간 계층 역할을 한다. 요청 라우팅, 인증, 로깅, 속도 제한 등을 처리한다."
+  },
+  {
+    "id": 46,
+    "term": "Monolith",
+    "category": "architecture",
+    "description": "모놀리식 아키텍처는 모든 기능이 하나의 애플리케이션 안에서 동작하는 구조다. 초기 개발이 단순하지만 유지보수나 확장성 면에서는 제약이 있다."
+  },
+  {
+    "id": 47,
+    "term": "Zero Downtime Deployment",
+    "category": "devops",
+    "description": "무중단 배포는 애플리케이션을 중단하지 않고 새로운 버전을 배포하는 방법이다. 서비스 연속성을 유지하기 위해 블루-그린, 롤링 업데이트 전략 등이 사용된다."
+  },
+  {
+    "id": 48,
+    "term": "Blue-Green Deployment",
+    "category": "devops",
+    "description": "블루-그린 배포는 두 개의 환경(블루, 그린)을 유지하며 새로운 버전을 한쪽에 배포한 뒤 트래픽을 전환하는 전략이다. 빠른 롤백과 무중단 배포가 가능하다."
+  },
+  {
+    "id": 49,
+    "term": "Canary Release",
+    "category": "devops",
+    "description": "카나리 배포는 일부 사용자에게만 새로운 버전을 먼저 배포해 문제 여부를 확인한 후 전체로 확장하는 전략이다. 리스크를 줄일 수 있다."
+  },
+  {
+    "id": 50,
+    "term": "Elastic Scaling",
+    "category": "architecture",
+    "description": "탄력적 확장은 시스템 부하에 따라 자원을 자동으로 늘리거나 줄이는 기능이다. 클라우드 환경에서 비용 효율성을 높이는 핵심 기술이다."
+  },
+  {
+    "id": 51,
+    "term": "Webhook Listener",
+    "category": "backend",
+    "description": "웹훅 리스너는 외부 서비스에서 전송하는 웹훅 요청을 수신하고 처리하는 서버 엔드포인트다. 실시간 이벤트 처리나 자동화에 사용된다."
+  },
+  {
+    "id": 52,
+    "term": "Data Lake",
+    "category": "database",
+    "description": "데이터 레이크는 구조화·비구조화 데이터를 원시 상태로 저장하는 대규모 저장소다. 빅데이터 분석과 머신러닝에 활용된다."
+  },
+  {
+    "id": 53,
+    "term": "Sharding",
+    "category": "database",
+    "description": "샤딩은 대규모 데이터를 여러 데이터베이스 서버에 분할 저장하는 기술이다. 수평 확장을 통해 성능과 처리량을 향상시킬 수 있다."
+  },
+  {
+    "id": 54,
+    "term": "Rate Limiting",
+    "category": "security",
+    "description": "레이트 리미팅은 클라이언트의 요청 빈도를 제한하여 서버 과부하나 DDoS 공격을 방지하는 기법이다."
+  },
+  {
+    "id": 55,
+    "term": "HMAC",
+    "category": "security",
+    "description": "HMAC(Hash-based Message Authentication Code)는 해시 함수와 비밀 키를 이용해 메시지 무결성과 인증을 보장하는 방식이다."
+  },
+  {
+    "id": 56,
+    "term": "Edge Computing",
+    "category": "architecture",
+    "description": "엣지 컴퓨팅은 데이터를 중앙 서버가 아닌 데이터 발생 지점 가까이에서 처리하는 방식이다. 지연 시간을 줄이고 실시간 처리를 가능하게 한다."
+  },
+  {
+    "id": 57,
+    "term": "API Throttling",
+    "category": "backend",
+    "description": "API 스로틀링은 일정 시간 동안 허용되는 요청 수를 제한하여 서버 자원을 보호하고 안정성을 유지하는 기술이다."
+  },
+  {
+    "id": 58,
+    "term": "Distributed System",
+    "category": "architecture",
+    "description": "분산 시스템은 여러 독립적인 컴퓨터가 하나의 시스템처럼 동작하도록 구성된 환경이다. 확장성과 내결함성을 높일 수 있다."
+  },
+  {
+    "id": 59,
+    "term": "Idempotent",
+    "category": "backend",
+    "description": "멱등성은 같은 요청을 여러 번 보내도 결과가 변하지 않는 특성이다. HTTP PUT, DELETE 메서드 등이 대표적이다."
+  },
+  {
+    "id": 60,
+    "term": "Rollback",
+    "category": "database",
+    "description": "롤백은 트랜잭션 도중 오류가 발생했을 때 이전 상태로 되돌리는 기능이다. 데이터 일관성과 무결성을 유지한다."
   }
 ]
